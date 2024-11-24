@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* primaary #1F1E24
+SECONDARY #6556CD */
+
+::-webkit-scrollbar{
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #181819;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #6556CD;
+    border-radius: 10px;
+}
+
+
+/* Style the container div if needed */
+.dropdown-btn {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    
+}
+
+/* Style the select dropdown */
+select {
+    width: 100%; /* Make the select fill the parent div */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #333;
+    -webkit-appearance: none; /* Safari */
+    -moz-appearance: none; /* Firefox */
+    appearance: none; /* Remove default dropdown arrow for customization */
+    cursor: pointer;
+}
+
+/* Add a custom arrow to the select dropdown */
+select::after {
+    content: '\25BC'; /* Unicode for down arrow */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* Optional: Hover effect */
+select:hover {
+    border-color: #6556CD;
+}
+
+/* Optional: Focus effect */
+select:focus {
+    outline: none;
+    box-shadow: 0 0 5px #007BFF;
+    border-color: #007BFF;
+}
+
