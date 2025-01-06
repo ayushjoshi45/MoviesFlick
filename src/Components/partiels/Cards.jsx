@@ -7,7 +7,7 @@ const Card = ({ data, title }) => {
         {data.map((items, index) => (
           <Link className="relative w-[25vh] mb-[5%]" key={index}>
             <img
-              className="shadow-[8px_17px_38px_2px_rgba(0,0,0,0.5)] h-[40vh] object-cover"
+              className="shadow-[8px_17px_38px_2px_rgba(0,0,0,0.5)] h-[40vh] object-cover rounded-md hover:scale-110 transition duration-250 ease-in-out"
               src={`https://image.tmdb.org/t/p/original/${
                 items.backdrop_path || items.poster_path || items.profile_path
               }`}
